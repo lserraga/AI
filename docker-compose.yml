@@ -1,0 +1,23 @@
+version: '3'
+
+services:
+
+  bot:
+    build: ./src/bot
+    #Exposing the default flask port
+    expose:
+     - 5000
+    networks:
+     - botnet
+
+  client:
+    build: ./src/Client
+    networks:
+     - botnet
+    ports:
+     - 5556:5000
+
+#Defining the network that all the nodes will be connected to
+#which allows connectivity between
+networks:
+  botnet:

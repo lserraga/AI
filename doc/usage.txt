@@ -1,0 +1,25 @@
+                 
+                  How to use the application
+
+    Execute "docker-compose up -d --scale bot=<number>" in the main directory.
+    This will start the <number> of bots and the client containers in detached
+    mode.
+
+    To start the application you can run "python3 bot-cli.py" to start a command
+    line interface or run "python3 bot-slack.py" to start the app connected to 
+    Slack.
+
+    Note: If your docker machine ip is not 192.168.99.100 add your machine IP to 
+    the commands: "python3 bot-cli.py <yourIP>". You can check your docker machin 
+    IP with "docker-machine ip".
+
+    Commands:
+
+    	* list: diplays a list with the avaliable bots to talk to.
+
+    	* start_session <bot_name>: starts a conversation with <bot_name>.
+
+    	* end_session: end the current conversation.
+
+    ***** It's important to name the main directory "chat" as --scale attaches
+    ***** this name to the beginning of the container names.

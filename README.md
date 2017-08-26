@@ -1,11 +1,11 @@
 
-                          Basic Bots
+                          Basic chat bots
 
   What is it?
   -----------
 
-  The basic bots allows a client to connect to a variable number of bots, 
-  run witha docker-compose --scale. All services dockerized and ready to use
+  The basic bots allows a client to connect to a variable number of chatbots, 
+  run with a docker-compose --scale. All services dockerized and ready to use
   with docker-compose.
 
   Documentation
